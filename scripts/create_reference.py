@@ -11,26 +11,26 @@ def apply_dms_ref(ref, gene_seq, out_name, output_prefix, region = "spike"):
     hu1_with_dms_ref = str(ref.seq)[:region_coords[0]-1] + gene_seq + str(ref.seq)[region_coords[0]-1+len(gene_seq):]
     assert len(hu1_with_dms_ref) == 29903 
 
-
     hu1_with_dms_ref.id = out_name
     hu1_with_dms_ref.name = out_name
     hu1_with_dms_ref.description = out_name
     SeqIO.write(hu1_with_dms_ref, os.path.join(output_prefix, out_name) , format="fasta")
 
 def get_gene_from_dms_ref(dms_ref, feature_type="gene"):
-
     # start and end should be the index for slicing in python, i.e., 0-based, half-open
     gene_feature = next(i for i in dms_ref.features if i.type == feature_type)
     return dms_ref[gene_feature.location.start: gene_feature.location.end]
 
-ref = SeqIO.read("./data/hu1/NC_045512.2.fasta", format="fasta")
+ref = SeqIO.read("./data/Hu-1/NC_045512.2.fasta", format="fasta")
 
 
-path_to_dms_ref = "./data/ba.2/spike/PacBio_amplicon.gb"
+# path_to_dms_ref = "./data/ba.2/spike/PacBio_amplicon.gb"
+path_to_dms_ref = "./data/KP.3/spike/PacBio_amplicon.gb"
 # path_to_dms_ref = "./data/xbb.1.5/spike/PacBio_amplicon.gb"
 
 dms_ref = SeqIO.read(path_to_dms_ref, format="genbank")
 
 gene_seq = get_gene_from_dms_ref(dms_ref)
-apply_dms_ref(ref, gene_seq, "NC_045512.2_BA.2_spike2.fa", "./output/ba.2/spike")
+apply_dms_ref(ref, gene_seq, "NC_045512.2_KP.3_spike.fa", "./output")
+# apply_dms_ref(ref, gene_seq, "NC_045512.2_BA.2_spike2.fa", "./output/ba.2/spike")
 # apply_dms_ref(ref, gene_seq, "NC_045512.2_XBB.1.5_spike2.fa", "./output/xbb.1.5/spike")
