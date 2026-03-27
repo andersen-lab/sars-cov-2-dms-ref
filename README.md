@@ -16,10 +16,11 @@
 
 # Phenotype Metrics
 
-| Name | Metrix | Region | Source |
-| Hu-1, BA.1, BA.2 | RBD | DMS | [final_variant_scores.csv](https://github.com/jbloomlab/SARS-CoV-2-RBD_DMS_Omicron/blob/main/results/final_variant_scores/final_variant_scores.csv) |
+| Name | Metric | Region | Source |
+|---|---|---|---|
+| Hu-1, BA.1, BA.2 | DMS | RBD | [final_variant_scores.csv](https://github.com/jbloomlab/SARS-CoV-2-RBD_DMS_Omicron/blob/main/results/final_variant_scores/final_variant_scores.csv) |
 | Hu-1 | EVEscape | Spike | [Hu-1_eve](https://github.com/OATML-Markslab/EVEscape/blob/main/results/summaries_with_scores/full_spike_evescape.csv) |
-| BA.2 | Spike | [BA.2_spike_dms](https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_ACE2_binding/blob/main/results/summaries/summary.csv) |
+| BA.2 | DMS | Spike | [BA.2_spike_dms](https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_ACE2_binding/blob/main/results/summaries/summary.csv) |
 | XBB.1.5 | DMS | RBD | [XBB.1.5_rbd_dms](https://github.com/dms-vep/SARS-CoV-2_XBB.1.5_RBD_DMS/blob/main/results/summaries/summary.csv) |
 | XBB.1.5 | DMS | Spike | [XBB.1.5_spike_dms](https://github.com/dms-vep/SARS-CoV-2_XBB.1.5_spike_DMS/blob/main/results/summaries/summary.csv) |
 | XBB.1.5 | EVEscape | Spike | [XBB.1.5_spike_eve](https://github.com/dms-vep/SARS-CoV-2_XBB.1.5_spike_DMS/blob/main/results/summaries/per_antibody_escape.csv) |
