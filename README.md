@@ -25,5 +25,6 @@
 | XBB.1.5 | DMS | Spike | [XBB.1.5_spike_dms](https://github.com/dms-vep/SARS-CoV-2_XBB.1.5_spike_DMS/blob/main/results/summaries/summary.csv) |
 | XBB.1.5 | EVEscape | Spike | [XBB.1.5_spike_eve](https://github.com/dms-vep/SARS-CoV-2_XBB.1.5_spike_DMS/blob/main/results/summaries/per_antibody_escape.csv) |
 | KP.3 | DMS, EVEscape | Spike | [KP.3_spike_dms_eve_monoclonal](https://github.com/dms-vep/SARS-CoV-2_KP.3.1.1_spike_DMS/blob/main/results/summaries/antibody_escape.csv), [KP.3_spike_dms_eve_polyclonal](https://github.com/dms-vep/SARS-CoV-2_KP.3.1.1_spike_DMS/blob/main/results/summaries/sera_group_averages.csv) |
+| NA   | Escape | RBD | [site-level_escape_across_antibody](https://raw.githubusercontent.com/jbloomlab/SARS2-RBD-escape-calc/refs/heads/main/results/escape.csv) |
 
 See pdf file for reference: [DMS Souce](dms_sources.pdf)
